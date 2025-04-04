@@ -16,6 +16,14 @@ html{
   align-items: center;
   padding: 0 20px;
   height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  animation: enhance-header linear both 1s;
+    animation-timeline: scroll(root);
+    animation-range: 0 300px;
+    z-index: 1;
 }
 
 .menu{
@@ -39,16 +47,17 @@ html{
   align-items: center;
 }
 
-.social-media a{
+a{
   color: whitesmoke;
   text-decoration: none;
 }
-.social-media a:hover{
+a:hover{
   color: #aaa;
+  cursor: pointer;
 }
 
 .main-title{
-  height: 90vh;
+  height: 95vh;
   align-content: center;
   justify-content: center;
   font-size: 2rem;
@@ -84,6 +93,14 @@ html{
   grid-template-rows: repeat(3, minmax(200px, 1fr));
   gap: 1rem;
   padding: 2rem;
+  margin: 3rem 0;
+}
+
+.about-title{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .grid div{
@@ -93,6 +110,13 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.grid div:hover{
+  background-color: #444;
+  scale: 1.15;
+  box-shadow: 0 0 5px #333;
 }
 
 .imagen-mati{
@@ -109,4 +133,31 @@ html{
 
 .img{
   grid-area: 2 / 2 / 4 / 4;
+}
+
+.who, .where, .why, .how, .thanks{
+  padding: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #3339;
+}
+
+.social-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+@keyframes enhance-header{
+  to{
+      background: #2225;
+      backdrop-filter: blur(2rem);
+  }    
 }
