@@ -90,7 +90,7 @@ a:hover{
 .grid{
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-template-rows: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
   gap: 1rem;
   padding: 2rem;
   margin: 3rem 0;
@@ -139,6 +139,108 @@ a:hover{
   padding: 1rem;
   text-align: center;
   gap: 1rem;
+}
+
+.why p{
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.why:hover p{
+  display: block;
+}
+
+.clients{
+  height: 60vh;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.clients p{
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.clients-logos{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.trusted{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.methods{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.methods-title{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.methods-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.method{
+  padding: 1rem;
+  background-color: #555;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 1px 1px 5px #444;
+}
+
+.methods-contact{
+  background-color: #117399;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 1rem auto 7rem auto;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.methods-contact:hover{
+  background-color: #0f5b7e;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.method h6{
+  font-size: 1.5rem;
+  color: #fff;
+  padding: .8rem 0 2rem 0;
+}
+
+.method p{
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 0 0 .5rem 0;
 }
 
 .footer{

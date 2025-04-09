@@ -1,5 +1,5 @@
 
-import mati from './matias.jpeg';
+import mati from './images/matias.jpeg';
 
 export function AboutPage() {
     return(

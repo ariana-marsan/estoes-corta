@@ -9,7 +9,7 @@ export function Footer() {
                      <p>All rights reserved</p>
                 </div>
                 <div className="social-footer">
-                    <a>Contact Us</a>
+                    <a href="mailto:matiasosorio82@gmail.com">Contact Us</a>
                     <p> Page built by <a className="link-to-AM" href="https://portfolio-ariana-marsan.netlify.app/" target="_blank">AM</a></p>
                 </div>
             </div>
