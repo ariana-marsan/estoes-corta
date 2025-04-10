@@ -9,6 +9,7 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mukta Malar", sans-serif;
 }
 
 .first-line{
@@ -106,6 +107,10 @@ a:hover{
   color: #ddd;
 }
 
+.about{
+  padding: 4rem 0;
+}
+
 .grid{
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -180,6 +185,7 @@ a:hover{
   font-size: 1.5rem;
   color: #fff;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .clients-logos{
@@ -210,13 +216,14 @@ a:hover{
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem 0 0 0;
 }
 
 .methods-title{
   font-size: 2rem;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 .methods-content{
@@ -274,7 +281,6 @@ a:hover{
   display: flex;
   flex-direction: column;
   text-align: right;
-  gap: 0.2rem;
 }
 
 .corta-footer{
@@ -286,4 +292,157 @@ a:hover{
       background: #2225;
       backdrop-filter: blur(2rem);
   }    
+}
+
+@media (min-width: 1200px) {
+  html{
+    margin: auto;
+    max-width: 70%;
+  }
+  .grid{
+    max-width: 90%;
+    grid-template-columns: repeat(3, minmax(50px, 250px));
+    grid-template-rows: repeat(3, minmax(100px, 250px));
+    margin: auto;
+    justify-content: center;
+  }
+  .footer{
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid{
+    max-width: 90%;
+    grid-template-columns: repeat(3, minmax(50px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, 250px));
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .grid{
+    max-width: 90%;
+    grid-template-columns: repeat(3, minmax(50px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, 250px));
+    margin: auto;
+    justify-content: center;
+  }
+  .about-title{
+    font-size: 1.8rem;
+  }
+  .how h1, .why h1, .where h1, .who h1, .thanks h1{
+    font-size: 1.5rem;
+  }
+  .how p, .why p, .where p, .who p, .thanks p{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid{
+    grid-template-columns: repeat(3, minmax(50px, 250px));
+    grid-template-rows: repeat(3, minmax(100px, 150px));
+    margin: auto;
+    justify-content: center;
+    padding: 3rem 0rem;
+  }
+  .about-title{
+    font-size: 1.5rem;
+  }
+  .how h1, .why h1, .where h1, .who h1, .thanks h1{
+    font-size: 1rem;
+  }
+  .how p, .why p, .where p, .who p, .thanks p{
+    font-size: 0.6rem;
+  }
+  .how p, .why p, .where p, .who p, .thanks p{
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
+    display: block;
+  }
+  .how:hover h1, .why:hover h1, .where:hover h1, .who:hover h1, .thanks:hover h1{
+    display: none;
+  }
+  .bienvenidos{
+    font-size: 0.9rem;
+  }
+  .shown-menu{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .grid{
+    grid-template-columns: repeat(3, minmax(50px, 250px));
+    grid-template-rows: repeat(3, minmax(100px, 175px));
+    margin: auto;
+    justify-content: center;
+    padding: 3rem 0rem;
+  }
+  .about-title{
+    font-size: 1.3rem;
+  }
+  .how h1, .why h1, .where h1, .who h1, .thanks h1{
+    font-size: 1rem;
+  }
+  .how p, .why p, .where p, .who p, .thanks p{
+    font-size: 0.6rem;
+  }
+  .footer{
+    font-size: .8rem;
+  }
+  .bienvenidos{
+    font-size: .8rem;
+  }
+  .social-media{
+    display: none;
+  }
+  .clients p{
+    font-size: 1.3rem;
+  }
+  .methods-title{
+    font-size: 1.5rem;
+  }
+  .method h6{
+    font-size: 1rem;
+    padding: .8rem 0 1rem 0;
+  }
+  
+  .method p{
+    font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .grid{
+    grid-template-columns: repeat(3, minmax(50px, 250px));
+    grid-template-rows: repeat(3, minmax(100px, 125px));
+  }
+  .about-title{
+    font-size: 1.3rem;
+  }
+  .how h1, .why h1, .where h1, .who h1, .thanks h1{
+    font-size: 0.85rem;
+  }
+  .how p, .why p, .where p, .who p, .thanks p{
+    font-size: 0.5rem;
+  }
+  .clients{
+    height: 40vh;
+  }
+  .clients p{
+    font-size: 1rem;
+  }
+  .clients-logos img{
+    width: 80px;
+    height: 80px;
+  }
+  .methods-title{
+    font-size: 1.2rem;
+  }
 }

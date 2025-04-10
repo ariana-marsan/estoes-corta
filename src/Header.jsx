@@ -11,6 +11,8 @@ export function Header() {
                 <a href="#methods-link">Plataformas Publicitarias</a>
             </div>
             </div>
+            <div id='about-link'></div>
+            <div></div>
         </header>
     )
 }

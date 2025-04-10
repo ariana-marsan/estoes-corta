@@ -23,7 +23,6 @@ function App() {
                 </div>
             </div>
     <Header />
-    <div id='about-link'></div>
     <AboutPage />
     <div id='clients-link'></div>
     <Clients />

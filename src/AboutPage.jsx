@@ -3,7 +3,7 @@ import mati from './images/matias.jpeg';
 
 export function AboutPage() {
     return(
-        <main>
+        <main className='about'>
             <h1 className='about-title'>SOBRE NOSOTROS</h1>
             <div className="grid">
             <div className="who">
@@ -13,7 +13,7 @@ export function AboutPage() {
             <div className="how">
                 <h1>Cómo lo hacemos</h1>
                 <p>
-                Utilizamos la tecnología y las técnicas más avanzadas para garantizar la excelencia en nuestros servicios. Creemos en la mejora continua y siempre buscamos maneras de perfeccionar nuestras habilidades y conocimientos.</p>
+                Utilizamos la tecnología y las técnicas más avanzadas para garantizar la excelencia en nuestros servicios.</p>
             </div>
             <div className="why">
                 <h1>Porqué lo hacemos</h1>
