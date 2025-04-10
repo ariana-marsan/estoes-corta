@@ -6,7 +6,7 @@ import calzados from './images/calzados.jpeg';
 export function Clients() {
     return (
         <div className="clients">
-            <p>They already <b className='trusted'>trusted</b> on us to boost their social media presence</p>
+            <p>Ellos <b className='trusted'>confiaron</b> en nosotros para expandir su presencia en redes</p>
             <div className="clients-logos">
                 <img className='logo' src={ asturiano } alt="Logo 1" />
                 <img className='logo' src={ beat } alt="Logo 2" />

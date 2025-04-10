@@ -2,6 +2,7 @@
 html{
   background-color: #222;
   color: whitesmoke;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -62,12 +63,12 @@ a:hover{
   justify-content: center;
   font-size: 2rem;
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .main-title h1{
   font-weight: 400;
   color: #fff;
+  font-family: "Anton", sans-serif;
 }
 
 .h4{
@@ -75,6 +76,7 @@ a:hover{
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
+  font-family: "Mutka Malar", sans-serif;
 }
 
 .h4 div{
@@ -85,6 +87,23 @@ a:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.shown-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.shown-menu a{
+  color: #bbb;
+}
+
+.shown-menu a:hover{
+  color: #ddd;
 }
 
 .grid{
@@ -100,7 +119,7 @@ a:hover{
   font-size: 2rem;
   color: #fff;
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .grid div{
@@ -172,7 +191,7 @@ a:hover{
 }
 
 .trusted{
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Mukta Malar", sans-serif;
 }
 
 .logo{
@@ -255,6 +274,11 @@ a:hover{
   display: flex;
   flex-direction: column;
   text-align: right;
+  gap: 0.2rem;
+}
+
+.corta-footer{
+  font-family: "Mukta Malar", sans-serif;
 }
 
 @keyframes enhance-header{

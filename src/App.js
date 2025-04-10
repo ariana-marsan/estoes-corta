@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+            <div id='home'></div>
     <div className="first-line">
                 <div className="bienvenidos">
                 <a className="menu"><i class={"fa-solid fa-bars "}></i></a>
@@ -18,13 +19,15 @@ function App() {
                 <div className="social-media">
                 <a href='https://www.instagram.com/estoescorta/'>Instagram</a>
                 <a>Facebook</a>
-                <a>Twitter</a>
-                <a>LinkedIn</a>
+                <a>TikTok</a>
                 </div>
             </div>
     <Header />
+    <div id='about-link'></div>
     <AboutPage />
+    <div id='clients-link'></div>
     <Clients />
+    <div id='methods-link'></div>
     <Methods />
     <Footer />
     </>
