@@ -5,15 +5,20 @@ import './App.css';
 import { Footer } from './Footer.jsx';
 import { Clients } from './Clients.jsx';
 import { Methods } from './Methods.jsx';
+import DropdownMenu from './DropdownMenu.jsx';
+
 
 function App() {
+
 
   return (
     <>
             <div id='home'></div>
     <div className="first-line">
                 <div className="bienvenidos">
-                <a className="menu"><i class={"fa-solid fa-bars "}></i></a>
+                <a className="menu" href='#'><i className={"fa-solid fa-bars "} ></i>
+                <DropdownMenu />
+                </a>
                 <h2>Bienvenidos a...</h2>
                 </div>
                 <div className="social-media">
