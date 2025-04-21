@@ -165,7 +165,7 @@ a:hover{
   transition: all 0.2s ease-in-out;
 }
 
-.grid div:hover{
+.how:hover, .why:hover, .where:hover, .who:hover, .thanks:hover{
   background-color: #444;
   scale: 1.1;
   box-shadow: 0 0 5px #333;
@@ -177,6 +177,11 @@ a:hover{
   border-radius: 15px;
   padding: 0;
   object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagen-mati:hover{
+  scale: 1.1;
 }
 
 .who{
@@ -193,13 +198,16 @@ a:hover{
   gap: 1rem;
 }
 
-.why p{
+.how p, .why p, .where p, .who p, .thanks p{
   display: none;
   transition: all 0.2s ease-in-out;
 }
-
-.why:hover p{
+.how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
   display: block;
+  font-size: .9rem;
+}
+.how:hover h1, .why:hover h1, .where:hover h1, .who:hover h1, .thanks:hover h1{
+  display: none;
 }
 
 .clients{
@@ -355,7 +363,7 @@ a:hover{
   .grid{
     max-width: 90%;
     grid-template-columns: repeat(3, minmax(50px, 300px));
-    grid-template-rows: repeat(3, minmax(100px, 250px));
+    grid-template-rows: repeat(3, minmax(100px, 275px));
     margin: auto;
     justify-content: center;
   }
@@ -365,40 +373,39 @@ a:hover{
   .how h1, .why h1, .where h1, .who h1, .thanks h1{
     font-size: 1.5rem;
   }
-  .how p, .why p, .where p, .who p, .thanks p{
-    font-size: 0.9rem;
+  .how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .how, .why, .where, .who, .thanks{
+    padding: .5rem;
   }
 }
 
 @media (max-width: 700px) {
   .grid{
     grid-template-columns: repeat(3, minmax(50px, 250px));
-    grid-template-rows: repeat(3, minmax(100px, 150px));
+    grid-template-rows: repeat(3, minmax(100px, 250px));
     margin: auto;
     justify-content: center;
     padding: 3rem 0rem;
+    gap: 1.3rem;
   }
-  .grid div:hover{
+  .how:hover, .why:hover, .where:hover, .who:hover, .thanks:hover{
     scale: 1.15;
+  }
+  .imagen-mati:hover{
+    scale: 1.05;
   }
   .about-title{
     font-size: 1.5rem;
   }
   .how h1, .why h1, .where h1, .who h1, .thanks h1{
-    font-size: 1rem;
-  }
-  .how p, .why p, .where p, .who p, .thanks p{
-    font-size: 0.6rem;
-  }
-  .how p, .why p, .where p, .who p, .thanks p{
-    display: none;
-    transition: all 0.2s ease-in-out;
+    font-size: 1.2rem;
   }
   .how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
-    display: block;
-  }
-  .how:hover h1, .why:hover h1, .where:hover h1, .who:hover h1, .thanks:hover h1{
-    display: none;
+    font-size: 0.8rem;
+    line-height: 1rem;
   }
   .bienvenidos{
     font-size: 0.9rem;
@@ -408,10 +415,20 @@ a:hover{
   }
 }
 
+@media (max-width: 600px) {
+  .how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .dropdown-content{
+    line-height: .8rem;
+  }
+}
+
 @media (max-width: 450px) {
   .grid{
     grid-template-columns: repeat(3, minmax(50px, 250px));
-    grid-template-rows: repeat(3, minmax(100px, 175px));
+    grid-template-rows: repeat(3, minmax(100px, 225px));
     margin: auto;
     justify-content: center;
     padding: 3rem 0rem;
@@ -422,8 +439,9 @@ a:hover{
   .how h1, .why h1, .where h1, .who h1, .thanks h1{
     font-size: 1rem;
   }
-  .how p, .why p, .where p, .who p, .thanks p{
+  .how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
     font-size: 0.6rem;
+    line-height: .8rem;
   }
   .footer{
     font-size: .8rem;
@@ -452,14 +470,13 @@ a:hover{
 
 
 @media (max-width: 350px) {
-  .menu:hover{
-  .dropdown, .dropdown:hover{
-    width: 35%;
-  }
-}
+    .dropdown, .dropdown:hover{
+      width: 40%;
+    }
+
   .grid{
     grid-template-columns: repeat(3, minmax(50px, 250px));
-    grid-template-rows: repeat(3, minmax(100px, 125px));
+    grid-template-rows: repeat(3, minmax(100px, 205px));
     gap: 1rem;
   }
   .grid div:hover{
@@ -471,8 +488,9 @@ a:hover{
   .how h1, .why h1, .where h1, .who h1, .thanks h1{
     font-size: 0.85rem;
   }
-  .how p, .why p, .where p, .who p, .thanks p{
+  .how:hover p, .why:hover p, .where:hover p, .who:hover p, .thanks:hover p{
     font-size: 0.5rem;
+    line-height: .7rem;
   }
   .clients{
     height: 40vh;
