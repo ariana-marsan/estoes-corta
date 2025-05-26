@@ -1,7 +1,7 @@
 
 import asturiano from './images/asturiano.jpeg';
-import beat from './images/beat.jpeg';
-import calzados from './images/calzados.jpeg';
+import beat from './images/cyp.jpeg';
+import calzados from './images/matemistica.jpeg';
 
 export function Clients() {
     return (
