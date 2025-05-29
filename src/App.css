@@ -234,6 +234,16 @@ a:hover{
   padding: 2rem 1rem;
 }
 
+.clients-logos img{
+  transition: all 0.2s ease-in-out;
+}
+
+.clients-logos img:hover{
+  cursor: pointer;
+  scale: 1.08;
+  box-shadow: 0 0 5px #5559;
+}
+
 .trusted{
   font-family: "Mukta Malar", sans-serif;
 }
