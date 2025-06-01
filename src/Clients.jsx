@@ -11,7 +11,7 @@ export function Clients() {
 
             <a href='https://www.instagram.com/asturianovoley/' target='_blank' rel='noreferrer'><img className='logo' src={ asturiano } alt="Logo 1" /> </a>
 
-            <a href='https://www.mercadolibre.com.ar/tienda/cyp?item_id=MLA660723790&category_id=MLA9304&official_store_id=135166&client=recoview-selleritems&recos_listing=true' target='_blank' rel='noreferrer'><img className='logo' src={ beat } alt="Logo 2" /> </a>
+            <a href='https://www.instagram.com/cotilloncyp?igsh=eXpoNnY3YjB3ajNh' target='_blank' rel='noreferrer'><img className='logo' src={ beat } alt="Logo 2" /> </a>
             
                 <a href='https://www.instagram.com/mate.mistica/' target='_blank' rel='noreferrer'><img className='logo' src={ calzados } alt="Logo 3" /></a>
             </div>
